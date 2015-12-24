@@ -1,1 +1,0 @@
-/Users/hozgan/Downloads/dotfiles-master/init.vim

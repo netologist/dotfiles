@@ -4,9 +4,10 @@ let g:tern_show_signature_in_pum=1
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'dag/vim-fish'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
-Plug 'Slava/tern-meteor'
+Plug 'Slava/tern-meteor', {'do': 'cp meteor.js ../tern_for_vim/node_modules/tern/plugin' }
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'majutsushi/tagbar'
@@ -21,7 +22,6 @@ Plug 'jussi-kalliokoski/harmony.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'SirVer/ultisnips'
-"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer --tern-completer' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'

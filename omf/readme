@@ -1,0 +1,4 @@
+theme - The current theme
+bundle - List of currently installed packages/themes
+init.fish - Custom script sourced after shell start
+before.init.fish - Custom script sourced before shell start

@@ -6,7 +6,7 @@ all:
 	[ -f ~/.gitconfig ] || ln -s $(PWD)/gitconfig ~/.gitconfig
 	[ -f ~/.bashrc ] || ln -s $(PWD)/bashrc ~/.bashrc
 	[ -f ~/.config/omf ] || ln -s $(PWD)/omf ~/.config/omf
-	[ -f ~/.oh-my-fish ] || curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+#	[ -f ~/.oh-my-fish ] || curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 	[ -f ~/.git-prompt.sh ] || ln -s $(PWD)/git-prompt.sh ~/.git-prompt.sh
 
 clean:

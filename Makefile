@@ -8,8 +8,8 @@ all:
 	[ -f ~/.git-prompt.sh ] || ln -s $(PWD)/git-prompt.sh ~/.git-prompt.sh
 	[ -f ~/.config/omf ] || ln -s $(PWD)/omf ~/.config/omf
 
-omf:
-	[ -f ~/.oh-my-fish ] || curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish >/dev/null 2>&1
+install-omf:
+	[ -f ~/.oh-my-fish ] || curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 clean:
 	[ -f ~/.vimrc ] || rm ~/.vimrc 
@@ -19,5 +19,4 @@ clean:
 	[ -f ~/.git-prompt.sh ] || rm ~/.git-prompt.sh
 	[ -f ~/.config/omf ] || rm -rf ~/.config/omf
 	[ -f ~/.oh-my-fish ] || /usr/local/bin/fish -c "omf destroy"
-
 .PHONY: all

@@ -5,9 +5,9 @@ all:
 	[ -f ~/.ctags ] || ln -s $(PWD)/ctags ~/.ctags
 	[ -f ~/.gitconfig ] || ln -s $(PWD)/gitconfig ~/.gitconfig
 	[ -f ~/.bashrc ] || ln -s $(PWD)/bashrc ~/.bashrc
-	[ -f ~/.git-prompt.sh ] || ln -s $(PWD)/git-prompt.sh ~/.git-prompt.sh
 	[ -f ~/.config/omf ] || ln -s $(PWD)/omf ~/.config/omf
 	[ -f ~/.oh-my-fish ] || curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+	[ -f ~/.git-prompt.sh ] || ln -s $(PWD)/git-prompt.sh ~/.git-prompt.sh
 
 clean:
 	[ -f ~/.vimrc ] || rm ~/.vimrc 

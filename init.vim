@@ -1,7 +1,12 @@
+let g:tern_show_argument_hints='on_move'
+let g:tern_show_signature_in_pum=1
+
+
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+Plug 'Slava/tern-meteor'
 Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'majutsushi/tagbar'
@@ -16,6 +21,7 @@ Plug 'jussi-kalliokoski/harmony.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'SirVer/ultisnips'
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer --tern-completer' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
@@ -42,6 +48,7 @@ Plug 'kchmck/vim-coffee-script', {'for' : 'coffee'}
 
 call plug#end()
 
+
 "=====================================================
 "===================== SETTINGS ======================
 
@@ -65,6 +72,7 @@ if !has('nvim')
   set hlsearch                    " Highlight found searches
 endif
 
+set tabstop=2
 set noerrorbells             " No beeps
 set number                   " Show line numbers
 set showcmd                  " Show me what I'm typing
@@ -607,6 +615,7 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 " By default, only Type/Method signatures are fetched. Full documentation can still be fetched when
 " you need it with the :OmniSharpDocumentation command.
 " let g:omnicomplete_fetch_documentation=1<Paste>
+
 
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',

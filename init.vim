@@ -1,7 +1,6 @@
 let g:tern_show_argument_hints='on_move'
 let g:tern_show_signature_in_pum=1
 
-
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'dag/vim-fish'
@@ -616,6 +615,11 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 " you need it with the :OmniSharpDocumentation command.
 " let g:omnicomplete_fetch_documentation=1<Paste>
 
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype css setlocal ts=2 sts=2 sw=2
+autocmd Filetype scss setlocal ts=2 sts=2 sw=2
+autocmd Filetype sass setlocal ts=2 sts=2 sw=2
 
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',

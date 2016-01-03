@@ -3,6 +3,7 @@ let g:tern_show_signature_in_pum=1
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'walm/jshint.vim'
 Plug 'dag/vim-fish'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
@@ -373,7 +374,7 @@ au FileType go nmap <Leader>f :GoImports<CR>
 "let g:ctrlp_cmd = 'CtrlPMRU'
 
 "let g:ctrlp_map = '<C-f>'
-let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_cmd = 'CtrlPMixed'
 "let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_height = 10		" maxiumum height of match window
@@ -616,10 +617,10 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 " let g:omnicomplete_fetch_documentation=1<Paste>
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2
 autocmd Filetype sass setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',

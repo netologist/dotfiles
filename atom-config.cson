@@ -1,0 +1,19 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "1c38d58c-171a-4979-bbbe-eaf62f26f1da"
+  core:
+    themes: [
+      "one-dark-ui"
+      "monokai-seti"
+    ]
+  editor:
+    fontFamily: "inconsolata"
+    invisibles: {}
+  "exception-reporting":
+    userId: "2a543465-2d0b-6b24-eddc-7a01f3de9ef4"
+  "go-plus":
+    environmentOverridesConfiguration: true
+    goPath: "/Projects/go"
+  "tool-bar": {}
+  welcome:
+    showOnStartup: false

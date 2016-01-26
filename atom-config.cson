@@ -3,7 +3,7 @@
     _analyticsUserId: "1c38d58c-171a-4979-bbbe-eaf62f26f1da"
   core:
     themes: [
-      "one-dark-ui"
+      "seti-ui"
       "monokai-seti"
     ]
   editor:

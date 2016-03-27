@@ -3,6 +3,7 @@ let g:tern_show_signature_in_pum=1
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'elixir-lang/vim-elixir'
 Plug 'walm/jshint.vim'
 Plug 'dag/vim-fish'
 Plug 'jistr/vim-nerdtree-tabs'

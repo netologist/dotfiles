@@ -3,7 +3,13 @@ let g:tern_show_signature_in_pum=1
 
 call plug#begin('~/.config/nvim/plugged')
 
+"Plug 'rplugin/elixir'
 Plug 'elixir-lang/vim-elixir'
+Plug 'thinca/vim-ref'
+Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
+Plug 'lambdatoast/elm.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'ervandew/supertab'
 Plug 'walm/jshint.vim'
 Plug 'dag/vim-fish'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -17,14 +23,13 @@ Plug 'pangloss/vim-javascript'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
-Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'jussi-kalliokoski/harmony.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
-Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'sirver/ultisnips'
 Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
@@ -52,6 +57,23 @@ call plug#end()
 
 "=====================================================
 "===================== SETTINGS ======================
+
+let g:tagbar_type_elixir = {
+    \ 'ctagstype' : 'elixir',
+    \ 'kinds' : [
+        \ 'f:functions',
+        \ 'functions:functions',
+        \ 'c:callbacks',
+        \ 'd:delegates',
+        \ 'e:exceptions',
+        \ 'i:implementations',
+        \ 'a:macros',
+        \ 'o:operators',
+        \ 'm:modules',
+        \ 'p:protocols',
+        \ 'r:records'
+    \ ]
+    \ }
 
 " I'm still using Vim from time to time. These needs to enabled so we can make
 " Vim usable again (these are default on NeoVim)
@@ -454,7 +476,7 @@ let g:delimitMate_expand_space = 1
 let g:delimitMate_smart_quotes = 1
 let g:delimitMate_expand_inside_quotes = 0
 let g:delimitMate_smart_matchpairs = '^\%(\w\|\$\)'
-
+let g:ulti_expand_res = 0
 " ==================== NerdTree ====================
 " Open nerdtree in current dir, write our own custom function because
 " NerdTreeToggle just sucks and doesn't work for buffers

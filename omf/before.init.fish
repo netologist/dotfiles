@@ -7,5 +7,5 @@ if test $TERM = "xterm"
     set __term_color_mode '256 colors'
 end
 
-set -x GOPATH /projects/go
-set -x PATH $GOPATH/bin $PATH
+set -gx GOPATH /Projects/go
+set -gx PATH $GOPATH/bin $PATH

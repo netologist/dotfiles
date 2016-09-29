@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'romainl/flattened'
+Plug 'elixir-lang/vim-elixir'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-surround'

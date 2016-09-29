@@ -136,3 +136,5 @@ shopt -s extglob
 
 #include .files when globbing.
 shopt -s dotglob
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

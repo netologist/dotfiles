@@ -3,10 +3,12 @@ let g:tern_show_signature_in_pum=1
 
 call plug#begin('~/.config/nvim/plugged')
 
+"Plug 'jceb/vim-orgmode'
+Plug 'hsitz/vimorganizer'
 "Plug 'rplugin/elixir'
 Plug 'elixir-lang/vim-elixir'
 Plug 'thinca/vim-ref'
-Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
+"Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 Plug 'lambdatoast/elm.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'ervandew/supertab'

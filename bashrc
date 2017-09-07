@@ -8,7 +8,7 @@
 
 # Get it from the original Git repo: 
 # https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-source ~/.git-prompt.sh
+#source ~/.git-prompt.sh
 
 # On Mac OS X: brew install bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -48,7 +48,7 @@ export EDITOR="vim"
 export LSCOLORS=cxBxhxDxfxhxhxhxhxcxcx
 
 # enable GIT prompt color
-export GIT_PS1_SHOWCOLORHINTS=true
+export GIT_PS1_SHOWCOLORHINTS=false
 
 ###############
 # Bash settings
@@ -62,7 +62,7 @@ export GIT_PS1_SHOWCOLORHINTS=true
 # 1. Git branch is being showed
 # 2. Title of terminal is changed for each new shell
 # 3. History is appended each time
-export PROMPT_COMMAND='__git_ps1 "\[$(tput setaf 6)\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]" " "; echo -ne "\033]0;$PWD\007"'
+#export PROMPT_COMMAND='__git_ps1 "\[$(tput setaf 6)\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]" " "; echo -ne "\033]0;$PWD\007"'
 
 
 # -- History
@@ -138,3 +138,5 @@ shopt -s extglob
 shopt -s dotglob
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
